@@ -1,1 +1,43 @@
-echo "Hello World, It's me Bharath"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bharath Balan</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #cursor {
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="content">
+      > echo "Hello World, It's me Bharath👨🏻‍💻🏍️💨"<span id="cursor">_</span>
+    </section>
+  </body>
+</html>
