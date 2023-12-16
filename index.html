@@ -30,16 +30,15 @@
     <div class="glitch-wrapper">
       <div
         class="glitch"
-        data-text='> echo "Hello World, Its me Bharath 👨🏻‍💻 🏍️💨"'
       >
         > echo "Hello World, Its me Bharath 👨🏻‍💻 🏍️💨"<span id="cursor">_</span>
       </div>
     </div>
     <script>
-      if(navigator.userAgent.toLowerCase().indexOf("windows")){
+      if(navigator.userAgent.toLowerCase().indexOf("windows") < 0){
         let blink = document.querySelector(".glitch");
         if(blink) {
-          blink.setAttribute("data-text", "");
+          blink.setAttribute("data-text", '> echo "Hello World, Its me Bharath 👨🏻‍💻 🏍️💨"');
         }
       }
     </script>
