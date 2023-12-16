@@ -36,6 +36,14 @@
       </div>
     </div>
     <script>
+      if(navigator.userAgent.toLowerCase().indexOf("windows")){
+        let blink = document.querySelector(".glitch");
+        if(blink) {
+          blink.setAttribute("data-text", "");
+        }
+      }
+    </script>
+    <script>
       fetch("https://api.ipify.org?format=json")
         .then((response) => response.json())
         .then((data) => {
